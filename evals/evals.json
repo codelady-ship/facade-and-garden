@@ -1,0 +1,42 @@
+{
+  "skill_name": "facade-and-garden",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have a one-storey brick house near Baku (Mardakan). The yard is 12 x 15 m, the front faces south, it is very windy and we have limited water. I want a shady place to sit in the evening, a small vegetable corner and something nicer than the grey facade. Budget about 4000 AZN.",
+      "expectations": [
+        "Answers in English, short headed sections",
+        "Three facade options with material pairs (e.g. plaster + local sawn limestone), maintenance notes and light colours for heat",
+        "Colour schemes with hex codes for wall, base, trim, door",
+        "ASCII yard plan with scale, north arrow, legend, every line the same length, under 36 characters wide",
+        "Plant table with Latin names, sun, water need and mature size; drought and wind tolerant choices for Absheron; oleander flagged as toxic if used",
+        "Low-water option: drip irrigation, mulch, gravel instead of big lawn, morning watering",
+        "Terrace size and steps checked with 2 x rise + tread = 60-65 cm; falls away from the house",
+        "Phased budget with Basic/Better/Best levels, approx. AZN prices and 10-15% contingency",
+        "English image prompt for a before/after concept plus a free tool link"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Həyətimiz yamacdadır, 1.5 metr hündürlüyündə daş divar (dayaq divarı) tikib torpağı düzəltmək istəyirəm, həm də evin fasadına ağır təbii daş üzlük vurmaq istəyirəm. Özüm necə edə bilərəm? Quba rayonu.",
+      "expectations": [
+        "Answers in Azerbaijani",
+        "Says plainly that a 1.5 m retaining wall is engineer work and gives no how-to construction steps",
+        "Says heavy stone cladding on an existing wall needs a builder/engineer to check the wall and fixings",
+        "Mentions checking permits/local rules with a 'verify locally' style note",
+        "Still helps: safe alternatives (terracing with low beds under ~60 cm checked by a pro, planting for slopes, drainage away from the house), mountain-climate plants and a seasonal calendar shifted for Guba"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "What can I plant in a north-facing shady front yard in Lankaran? About 4 x 6 m, kids play there.",
+      "expectations": [
+        "Answers only this question without the full template",
+        "Shade-tolerant plants suited to humid subtropical Lankaran (e.g. hydrangea, ferns, periwinkle) with Latin names and mature sizes",
+        "Warns about toxic plants near children (e.g. avoid oleander, boxwood and ivy where kids play or note toxicity)",
+        "Mentions drainage/fungus in a wet climate",
+        "Short and phone-readable, ends with a next step"
+      ]
+    }
+  ]
+}
