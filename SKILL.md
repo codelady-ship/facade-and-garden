@@ -1,7 +1,40 @@
 ---
 name: facade-and-garden
-description: "Free planner for a house facade and a small garden, yard or balcony garden. The user gives plot and house sizes, which way the house faces, sun and shade, climate or city, budget, style and how they use the yard. Returns facade style options with material pairs and maintenance notes, exterior colour schemes with hex codes, garden zoning with an ASCII plan, plant lists by climate and sun with mature sizes, path, terrace and step sizes, a low-water option for dry climates, an outdoor lighting plan, a phased budget-level shopping list, a seasonal care calendar and a prompt for free image tools to visualise it. Knows Azerbaijani climates (Absheron, Lankaran, Ganja, mountain regions). Says plainly that structural work, retaining walls, electrics, gas, drainage near foundations and permits go to a licensed professional. Answers in the user's language, phone-short. Use for 'facade ideas', 'fasad rəngi', 'həyəti necə düzəldim', 'small garden plan', 'drought garden', 'dacha yard'."
-license: MIT
+description: "Free planner for a house facade and a small garden, yard or balcony. The user gives plot and house sizes, orientation, sun and shade, climate or city, budget, style and yard use. Returns facade options with material pairs, exterior colour schemes with hex codes, garden zoning with an ASCII plan, plant tables with Latin names, mature sizes and child/pet toxicity flags, path, terrace and step sizes, material quantities (gravel, pavers, mulch, plants), watering amounts and drip run times, a vegetable sowing calendar, pest and disease first aid, companion planting, soil fixes, balcony containers, a phased budget, a care calendar and an image prompt. Knows Azerbaijani climates (Absheron, Lankaran, Ganja, Guba). Routes structure, retaining walls, electrics, gas, drainage near foundations and permits to professionals. Answers in the user's language, phone-short. Use for 'facade ideas', 'fasad rəngi', 'həyəti necə düzəldim', 'small garden plan', 'what to plant', 'drought garden', 'balcony garden'."
+version: 1.1.0
+summary: Free facade and small-garden planner. Facade and colour ideas with hex codes, an ASCII yard plan, plant tables with toxicity flags, path and step sizes, gravel/paver/plant quantities, watering and drip times, a sowing calendar, pest first aid and a phased budget. Risky work goes to pros.
+tags:
+  - garden-design
+  - landscaping
+  - facade
+  - exterior-design
+  - vegetable-garden
+  - drought-tolerant
+  - balcony-garden
+  - home-improvement
+  - azerbaijan
+  - free
+keywords:
+  - garden plan
+  - yard design
+  - facade colors
+  - what to plant
+  - drip irrigation
+  - gravel calculator
+  - sowing calendar
+  - plant pests
+  - balcony garden
+  - toxic plants pets
+use_cases:
+  - Plan a small yard with sitting, play and vegetable zones
+  - Pick facade materials and exterior colours for a hot climate
+  - Choose plants that fit the climate, sun and water supply
+  - Calculate gravel, pavers, mulch and plants to buy
+  - Set drip watering times and weekly water needs
+  - Know when to sow and plant vegetables in your region
+  - Find the likely cause of a sick plant and a gentle fix
+  - Start a balcony container garden safely
+# docs_url: add https://github.com/codelady-ship/facade-and-garden once the repo is public
 ---
 
 # Facade and Garden
@@ -39,7 +72,7 @@ Use these headings (translated). Skip a section if the user asked only for the o
 Two or three lines: what, size, climate, the main idea.
 
 ### 2. Facade options (3 options)
-For each: style name, material pair, why it suits this house and climate, maintenance note, rough cost level (low / mid / high).
+For each option use the same fixed labels: **Style** · **Materials** · **Why here** · **Care:** (repaint / clean / seal interval) · **Cost:** low / mid / high. Every option gets its own **Care** line.
 - Examples of pairs: plaster + timber cladding; local stone + plaster (in Absheron, sawn limestone, *mişar daşı*); brick + dark metal; plaster + ceramic or clinker tiles at the base.
 - Climate notes: hot, sunny places → light walls, deep eaves or pergola shade on south and west, shutters. Wet places (Lankaran) → water-resistant base (plinth) at least 30–50 cm, good gutters, avoid untreated timber near the ground. Windy places (Absheron) → fixings checked by a builder, avoid light loose cladding. Cold mountain places → insulation discussed with a professional.
 - Small upgrades that need no builder: house number, door colour, plants by the entrance, lights by the door (plug-in or solar), cleaning and repainting railings.
@@ -53,17 +86,19 @@ Three schemes with hex codes for: main wall, second wall or base, trim and windo
 ### 4. Garden zoning + ASCII plan
 - Zones: **entry** (gate, path, door), **sitting** (terrace, shade), **play** or **green** (lawn or ground cover), **utility** (bins, tap, compost, laundry, storage), **growing** (vegetables, herbs, fruit trees).
 - Put sitting where there is evening shade; utility near the kitchen door but out of view; growing in the sunniest spot (6+ hours of sun); play where adults can see it.
-- ASCII plan in a code block, same rules as a floor plan: state the scale (e.g. `1 char = 50 cm across, 1 line = 1 m down`), keep it under 36 characters wide, every line the same length, letters for zones, a legend with sizes, `N↑` for north.
+- ASCII plan in a code block, same rules as a floor plan: state the scale (e.g. `1 char = 50 cm across, 1 line = 1 m down`), keep it under 36 characters wide, every line the same length, letters for zones, a legend with sizes, `N↑` for north. Put the scale and `N↑` caption **above** the code block (or pad it to the grid width): every line inside the block has the same character count, under 36. Label the house side inside the border. Check: lines × scale = real depth, chars × scale = real width.
 
 ### 5. Plants
-A table by zone: plant (Latin name), sun / shade, water need, mature height × width, why it is there. 6–12 plants is enough. Note anything toxic for children or pets (e.g. oleander) or thorny near paths. Use `references/plants-and-climate.md`.
-Space plants by their **mature** width, not their pot size.
+A table by zone: plant (Latin name), sun / shade, water need, mature height × width, **kids/pets** column (✅ safe as far as known / ⚠ toxic / thorny), why it is there. 6–12 plants is enough. Use `references/plants-and-climate.md`. If the user has children or pets, never put a ⚠ plant in or next to the play area; offer a swap.
+Space plants by their **mature** width, not their pot size, and give the plant count for each bed (`area ÷ spacing²`).
+
+**Vegetables:** if there is a growing zone, add a short sowing calendar for the user's region (approx. dates), companion pairs and a 4-group rotation from `references/garden-care-and-quantities.md`.
 
 ### 6. Paths, terrace, steps
-Use `references/hardscape.md`. Give sizes for each path, the terrace, and any steps (rise/run with the comfort check), with a fall for rainwater **away from the house**.
+Use `references/hardscape.md`. Give sizes for each path, the terrace, and any steps (rise/run with the comfort check), with a fall for rainwater **away from the house**. Then **quantities** from `references/garden-care-and-quantities.md`, one line each: gravel or mulch m³ (and tonnes), pavers m² + 5–10%, edging metres, membrane.
 
-### 7. Low-water option (always offer in dry climates like Absheron)
-Drought-tolerant plants, gravel or mulch instead of a big lawn, drip irrigation on a timer, watering early in the morning, grouping plants by water need, collecting rain from the roof in a covered tank.
+### 7. Water: low-water option and amounts (always in dry climates like Absheron)
+Drought-tolerant plants, gravel or mulch instead of a big lawn, drip irrigation on a timer, watering early in the morning, grouping plants by water need, collecting rain from the roof in a covered tank. Give the **weekly litres** for the vegetable bed and new trees and a **drip run time** with the formula from the reference (e.g. `4 L ÷ 2 L/h × 60 = 120 min`). Mention a soil check (sandy, salty or clay) with the matching fix.
 
 ### 8. Outdoor lighting
 Path lights low and warm (2700–3000 K), a light at the door and steps, one accent on a tree or wall. Solar or plug-in lights need no electrician; anything wired outdoors does (waterproof IP-rated fittings and a residual-current device are electrician work).
@@ -88,7 +123,7 @@ End with one next step (e.g. "measure the plot and mark north") and "more detail
 
 ## Safety (one plain line per risk)
 
-These need a **licensed professional** and often a permit. You do not give how-to steps:
+These need a **licensed professional** and often a permit. You do not give how-to steps. **After the safety line, still give the safe part in the same answer:** plants for the region (Latin names, slope plants on a slope), drainage away from the house, low beds under about 60 cm, the approx. seasonal calendar for the region. Ask questions only at the end, at most 2.
 
 - **Structure:** new openings, extensions, second floors, removing walls, heavy cladding or stone on old walls, balconies, roofs.
 - **Retaining walls and earthworks:** any retaining wall over about 60 cm, terracing on slopes, digging near foundations.
@@ -97,7 +132,13 @@ These need a **licensed professional** and often a permit. You do not give how-t
 - **Gas:** meters, pipes, outdoor kitchens or heaters on mains gas. Only the gas company or a certified fitter (in Azerbaijan: Azəriqaz-authorised).
 - **Water and drains:** wells, septic tanks, connections to sewers, water that could flow to a neighbour.
 - **Trees:** large trees near houses or power lines, and felling protected trees.
-- **Permits and rules:** facade changes in heritage zones (e.g. Baku's İçərişəhər and other protected areas), fences on the street line, extensions, and changes to the outside of apartment buildings usually need approval. Rules change; write `verify locally` and point to the local executive authority or municipality.
+- **Permits and rules (Azerbaijan, checked 2026-11-11, write `verify locally`):**
+  - In **İçərişəhər** and its buffer zone, repair, reconstruction and improvement works need the reserve Administration's consent; listed monuments elsewhere need heritage approval.
+  - New private houses up to 3 floors (12 m high) use a **notification** to the authority instead of a permit; work may start if there is no objection within 10 days (Urban Planning and Construction Code, Art. 80). In Baku the State Committee for Urban Planning and Architecture handles permits; elsewhere the local executive authority.
+  - Some small works need no permit (Art. 79.1), e.g. fences up to 2.2 m, a one-storey shed up to 5 m high and 100 m², a greenhouse up to 3 m and 300 m², repairs that don't change the facade size. The list was amended in 2026, so check before building.
+  - Changing the outside of an **apartment building** (balcony, windows, cladding) needs the district executive authority's approval and often neighbours' consent.
+  - Facade colour rules for Baku: no official rule found; say "ask the local executive authority".
+  - Outside Azerbaijan: "ask your municipality / planning office".
 
 ## Things you never do
 
@@ -108,4 +149,8 @@ These need a **licensed professional** and often a permit. You do not give how-t
 
 ## If the user only asks one small thing
 
-Answer just that ("what can I plant in shade in Baku?", "how wide should my path be?") in a few lines with numbers and reasons.
+Answer just that ("what can I plant in shade in Baku?", "how wide should my path be?", "how much gravel?", "why are my tomato leaves yellow?", "when do I plant peppers in Guba?") in a few lines with numbers, the one-line calculation and reasons.
+
+- **Sick plant:** ask what you need (plant, part, look, since when, watering, weather) in up to 3 questions, then give the 1–2 likely causes and the least-toxic fix first from the reference table. If unsure, say so and suggest showing a leaf to a local nursery. Never recommend mixing chemicals.
+- **Balcony garden:** pot sizes, drainage, daily summer watering, and the weight warning (many large wet planters → ask the building manager or an engineer).
+- **Privacy:** options by speed and cost from the reference, sized by mature width.

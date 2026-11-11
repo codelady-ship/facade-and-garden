@@ -2,6 +2,8 @@
 
 Sizes are typical mature height × width; they vary with climate and pruning. Always confirm with a local nursery. Use the Latin name when shopping.
 
+Toxicity notes come from the ASPCA plant list (aspca.org, checked 2026-11-11) for pets; for children, treat any plant marked toxic as "not where small children play".
+
 ## Climate types to recognise
 
 | Climate (Köppen idea) | Examples | What it means for plants |
@@ -31,19 +33,21 @@ Outside Azerbaijan, ask for the city and use the USDA hardiness zone or the loca
 | Almond (Prunus dulcis) | 4–6 × 4 m | Early spring flowers |
 | Juniper (Juniperus, many kinds) | 0.3–5 m | Choose the size on the label |
 | Tamarisk (Tamarix) | 3–5 × 3 m | Salt and wind tolerant, windbreak |
-| Oleander (Nerium oleander) | 2–4 × 2–3 m | **Toxic** to people and pets; not near play areas |
+| Oleander (Nerium oleander) | 2–4 × 2–3 m | **Toxic** (all parts) to people and pets (ASPCA: dogs, cats, horses); never near play areas |
 | Grapevine (Vitis vinifera) on a pergola | climber | Summer shade, autumn fruit |
 
 ## Shade and half-shade
 
 | Plant | Size (H × W) | Notes |
 |---|---|---|
-| Hosta (Hosta) | 0.4 × 0.6 m | Needs water; not for dry Absheron shade |
-| Ivy (Hedera helix) | climber / ground | Toxic if eaten; keep off weak walls |
+| Hosta (Hosta) | 0.4 × 0.6 m | Needs water; not for dry Absheron shade; **toxic** to dogs and cats (ASPCA) ⚠ |
+| Ivy (Hedera helix) | climber / ground | **Toxic** to dogs and cats (ASPCA); harmful if eaten; keep off weak walls |
 | Periwinkle (Vinca minor) | 0.15 m ground cover | Dry shade under trees |
-| Hydrangea (Hydrangea macrophylla) | 1.2 × 1.2 m | Humid areas like Lankaran |
-| Boxwood (Buxus sempervirens) | 0.5–2 m | Low hedges; toxic if eaten |
-| Fern (Dryopteris filix-mas) | 0.8 × 0.8 m | Moist shade |
+| Hydrangea (Hydrangea macrophylla) | 1.2 × 1.2 m | Humid areas like Lankaran; **toxic** to dogs and cats (ASPCA) |
+| Boxwood (Buxus sempervirens) | 0.5–2 m | Low hedges; **toxic** to dogs and cats (ASPCA), low toxicity for people |
+| Fern (Dryopteris filix-mas) | 0.8 × 0.8 m | Moist shade; **poisonous if eaten** ⚠, not in a kids/pets play area |
+
+For a kids/pets yard in shade, safer picks are hard to confirm; say "check with a local nursery" and keep ⚠ plants out of the play zone.
 
 ## Edible corner (6+ hours of sun)
 

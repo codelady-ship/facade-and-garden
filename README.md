@@ -8,6 +8,12 @@
 
 A free, text-only skill by Codelady Abroad for first-time house and dacha owners and anyone with a small yard. It runs anywhere a plain prompt runs: Claude Code, the Claude app, other agents or a website form. No scripts, files or paid tools.
 
+## New in 1.1.0
+
+Vegetable sowing calendar per region; pest and disease first aid; companion planting and rotation; gravel/paver/plant quantities; watering and drip run times; soil fixes; balcony containers; kids/pets toxicity column (ASPCA); Azerbaijani permit notes checked on official pages. See [CHANGELOG.md](CHANGELOG.md).
+
+Agensi package: `pwsh ./scripts/build-agensi-zip.ps1` builds `dist/facade-and-garden.zip` (SKILL.md, references/, examples/, CHANGELOG.md only). Listing texts: [LISTING.md](LISTING.md). Blind test results: [`tests/`](tests/).
+
 ## What you get
 
 - Up to 6 short questions, only for what is missing.

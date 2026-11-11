@@ -37,6 +37,41 @@
         "Mentions drainage/fungus in a wet climate",
         "Short and phone-readable, ends with a next step"
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "My tomato plants in Baku have yellow lower leaves with brown spots that have rings, and some fruits have black bottoms. I water with a hose every evening on the leaves. What is wrong and what do I do? I have a cat.",
+      "expectations": [
+        "Answers only this question, short",
+        "Names likely causes: early blight (ringed brown spots on lower leaves) and blossom-end rot (uneven watering); may mention overwatering",
+        "Least-toxic fixes first: remove lower leaves, water the soil not the leaves, water in the morning, deep and regular watering, mulch, rotate next year",
+        "Any chemical only as a later step, following the label, keeping the cat away; never suggests mixing products",
+        "Suggests a local nursery/agronomy check if unsure"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Quba rayonunda bağ evimiz var. Həyətdə 15 m uzunluğunda, 1 m enində çınqıl cığır və 3 x 4 m tərəvəz ləki düzəltmək istəyirəm. Nə qədər çınqıl lazımdır, pomidoru nə vaxt əkim və damcı suvarma neçə dəqiqə işləməlidir?",
+      "expectations": [
+        "Answers in Azerbaijani",
+        "Gravel: 15 x 1 x 0.05-0.08 m = about 0.75-1.2 m3 shown as a one-line calculation, with tonnes (about 1.6-1.7 t per m3) and about 10% extra",
+        "Guba timing marked approximate: tomato seedlings indoors about Mar-early Apr, planting out about late May-early June after frost; says to ask a local nursery",
+        "Weekly water for 12 m2 (about 25-35 L per m2 = 300-420 L) and a drip run-time formula with a worked example",
+        "Mentions hardening off seedlings or cold mountain nights",
+        "Phone-short"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "I live on the 9th floor in Baku and want a balcony garden with herbs, tomatoes and a small olive tree in a big pot. My balcony is 1.2 x 3 m and very windy. What do I need?",
+      "expectations": [
+        "Pot sizes per plant (herbs 2-5 L, tomato 20-30 L, olive 40-60 L) and potting mix with drainage holes",
+        "Weight warning: wet soil is heavy, keep big pots few and near the wall, ask the building manager/engineer for many large planters",
+        "Wind: secure pots and trellises on a high floor",
+        "Watering: containers dry fast, about daily in Baku summer, mulch",
+        "Do not block the balcony drain or let water drip onto neighbours",
+        "Short and phone-readable"
+      ]
     }
   ]
 }
