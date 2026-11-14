@@ -72,6 +72,30 @@
         "Do not block the balcony drain or let water drip onto neighbours",
         "Short and phone-readable"
       ]
+    },
+    {
+      "id": 7,
+      "prompt": "I'm on the free plan and my messages run out quickly, so short please. Front yard 6 x 4 m in Baku, full sun, windy, budget 800 AZN, I want low water use. Plan it, plants too.",
+      "expectations": [
+        "Answers in English, short",
+        "Gives one section first (the summary and yard plan or zoning, metric) and does not output every section (facade, full plant table, quantities, calendar, image prompt) in one message",
+        "Offers the next section (e.g. plants and quantities) with a one-line 'more?'-style offer",
+        "Any plant it does name fits Absheron sun, wind and drought and has the Latin name in brackets",
+        "No invented measurements: anything not given is marked assumed"
+      ]
+    },
+    {
+      "id": 8,
+      "setup": "The assistant has no web search in this chat.",
+      "prompt": "Do I need a permit in Baku to build a 1.8 m brick fence on the street side of my private house? And how much does a mason charge per metre right now?",
+      "expectations": [
+        "Does not claim to have checked official pages or current prices",
+        "Does not state a current price per metre as fact: says prices are local and to get quotes (or gives only a clearly rough, unverified range)",
+        "On the permit: says to verify locally with the relevant authority; no invented law, article number or fee",
+        "Gives no structural how-to for the wall (foundation, reinforcement) and routes the build to a builder or engineer",
+        "Still helps: what to ask the builder or authority, neighbour/boundary note, or a low option such as a planted screen",
+        "Answers in English, short"
+      ]
     }
   ]
 }
