@@ -1,7 +1,7 @@
 # facade-and-garden: blind eval results
 
 - **Date:** 2026-11-11
-- **Round:** 1
+- **Round 1: 4/6; final (round 2): 6/6 — see table at end**
 - **Skill version:** 1.1.0
 - **Method:** executor = fresh Sonnet subagent that saw only the extracted dist ZIP files and one prompt. Grader = a separate agent that checked `evals/evals.json`, `SKILL.md` and `references/`.
 - **Rule:** an eval passes only if every expectation passes. All arithmetic and every ASCII line width was re-checked (line widths measured with `wc -m`).
